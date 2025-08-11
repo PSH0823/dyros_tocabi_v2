@@ -53,6 +53,8 @@
         <light directional="true" diffuse=".5 .5 .5" pos="10 0 0" dir="-10 0 0"/>
 
         <body name="base_link">
+            <!-- Visualizing a CBF for Self Collision (Pelvis) -->
+            <geom class="viz" type="sphere" size="0.2" rgba="0 0 1 0.3"/>
             <joint name="virtual_joint" type="free" limited='false' frictionloss="0" damping="0" stiffness="0" armature="0"/>
             <inertial pos="0.07809 0 0.03985" mass="12.19525" fullinertia="0.101833182 0.072400662 0.144478157 -0.000070812 -0.003831096 0.000079272" />
             <geom class="viz" pos="0.11 0 0.02" rgba="0.20313 0.20313 0.20313 1" quat="0.5 0.5 0.5 0.5" mesh="Pelvis_link" />
@@ -225,6 +227,8 @@
                                             <geom class="cls" size="0.04 0.04" pos="0 0.08 0.0325" quat="0.707107 0.707107 0 0" type="cylinder"/>
                                             <geom class="cls" size="0.04 0.04" quat="0.707107 0 0.707107 0" type="cylinder"/>
                                             <geom size="0.034 0.025" pos="0.003 0 0" quat="0.707107 0 0.707107 0" rgba="0.20313 0.20313 0.20313 1" type="cylinder" class="viz"/>
+                                            <!-- Visualizing a CBF for Self Collision (Left Elbow) -->
+                                            <geom class="viz" type="sphere" size="0.1" rgba="0 0 1 0.3"/>
                                             <body name="L_Forearm_Link" pos="0 0.1244 0.0325">
                                                 <inertial pos="-0.01426 0.0767 0.00033" mass="0.35234" fullinertia="0.001053636 0.049889479 0.001266418 0.000084568 0.000022117 0.000019539" />
                                                 <joint name="L_Forearm_Joint" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14159 3.14159" class="shg14_100_2so"/>
@@ -242,6 +246,8 @@
                                                         <geom size="0.03 0.03 0.01" pos="0 0 -0.025" type="box" class="cls"/>
                                                         <geom size="0.03 0.03 0.01" pos="0 0 -0.025" type="box" class="viz" rgba="0.20313 0.20313 0.20313 1" />
                                                         <site class="FTsensor" name="LH_FT" pos="0 0 -0.035"/>
+                                                        <!-- Visualizing a CBF for Self Collision (Left Hand) -->
+                                                        <geom class="viz" type="sphere" size="0.15" rgba="0 0 1 0.3"/>
                                                     </body>
                                                 </body>
                                             </body>
@@ -290,6 +296,8 @@
                                             <geom size="0.04 0.04" pos="0 -0.08 0.0325" quat="0.707107 0.707107 0 0" type="cylinder" class="cls" />
                                             <geom size="0.04 0.04" quat="0.707107 0 0.707107 0" type="cylinder" class="cls" />
                                             <geom size="0.034 0.025" pos="0.003 0 0" quat="0.707107 0 0.707107 0" rgba="0.20313 0.20313 0.20313 1" type="cylinder" class="viz"/>
+                                            <!-- Visualizing a CBF for Self Collision (Right Elbow) -->
+                                            <geom class="viz" type="sphere" size="0.1" rgba="0 0 1 0.3"/>
                                             <body name="R_Forearm_Link" pos="0 -0.1244 0.0325">
                                                 <inertial pos="-0.01426 -0.0767 0.00033" mass="0.35234" fullinertia="0.001053636 0.049889479 0.001266418 -0.000084568 0.000022117 -0.000019539" />
                                                 <joint name="R_Forearm_Joint" pos="0 0 0" axis="0 -1 0" limited="true" range="-3.14159 3.14159" class="shg14_100_2so"/>
@@ -307,6 +315,8 @@
                                                         <geom size="0.03 0.03 0.01" pos="0 0 -0.025" type="box" class="cls" />
                                                         <geom size="0.03 0.03 0.01" pos="0 0 -0.025" type="box" class="viz" rgba="0.20313 0.20313 0.20313 1" />
                                                         <site class="FTsensor" name="RH_FT" pos="0 0 -0.035"/>
+                                                        <!-- Visualizing a CBF for Self Collision (Left Hand) -->
+                                                        <geom class="viz" type="sphere" size="0.15" rgba="0 0 1 0.3"/>
                                                     </body>
                                                 </body>
                                             </body>

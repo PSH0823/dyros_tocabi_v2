@@ -985,10 +985,23 @@ void *TocabiController::Thread3()
 /////////////////////////////////////////////
 /////////////Do something in Thread3 !!!!!!!
 #ifdef COMPILE_TOCABI_AVATAR
-               ac_.computeThread3();
+            if ((rd_.tc_.mode > 9) && (rd_.tc_.mode < 15)) {
+                try
+                {
+                    ac_.computeThread3();
+                }
+                catch (const std::exception &e)
+                {
+                    std::cout << "Error occured at AVATAR THREAD1" << std::endl;
+
+                    std::cerr << e.what() << '\n';
+
+                    rd_.positionControlSwitch = true;
+                }
+            }
 #endif
 
-                /////////////////////////////////////////////
+/////////////////////////////////////////////
             }
             else
             {

@@ -2199,7 +2199,6 @@ void StateManager::StateEstimate()
         }
         else
         {
-            std::cout << "whatthefuck" << std::endl;
         }
 
         // if (dc.single_foot_only)
