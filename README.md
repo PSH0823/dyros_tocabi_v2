@@ -49,7 +49,7 @@ Introduction to tocabi v2
 ### 1. clone repository
 ```sh
 cd catkin_ws/src
-git clone --recurse-submodules https://github.com/saga0619/dyros_tocabi_v2
+git clone --recurse-submodules https://github.com/PSH0823/dyros_tocabi_v2.git
 ```
 
 ### 2. CustomController (optional)
